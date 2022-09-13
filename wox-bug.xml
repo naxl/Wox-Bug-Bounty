@@ -1,0 +1,113 @@
+
+You can help us to fix this issue by opening issue in: https://github.com/Wox-launcher/Wox/issues/new
+1. upload log file: C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\UserData\Logs\1.4.1196\2022-08-23.txt
+2. copy below exception message
+Error id: 433166932f414597ba2cb46981fe1571
+Exception begin --------------------
+  System.NullReferenceException: Object reference not set to an instance of an object.
+  HResult: -2147467261
+  Data: <System.Object> -> <>
+  Source: Wox.Core
+  TargetAssembly: Wox.Core, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null
+  TargetModule: Wox.Core.dll
+  TargetSite: Boolean <GetPluginsForInterface>b__27_0(Wox.Plugin.PluginPair)
+  StackTrace: --------------------
+   at Wox.Core.Plugin.PluginManager.<>c__27`1.<GetPluginsForInterface>b__27_0(PluginPair p) in C:\projects\wox\Wox.Core\Plugin\PluginManager.cs:line 241
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at Wox.Core.Resource.Internationalization.AddPluginLanguageDirectories() in C:\projects\wox\Wox.Core\Resource\Internationalization.cs:line 47
+   at Wox.Core.Resource.Internationalization..ctor() in C:\projects\wox\Wox.Core\Resource\Internationalization.cs:line 30
+   at Wox.Core.Resource.InternationalizationManager.get_Instance() in C:\projects\wox\Wox.Core\Resource\InternationalizationManager.cs:line 18
+   at Wox.ViewModel.MainViewModel..ctor(Boolean useUI) in C:\projects\wox\Wox\ViewModel\MainViewModel.cs:line 79
+   at Wox.App.<OnStartup>b__15_0() in C:\projects\wox\Wox\App.xaml.cs:line 106
+   at Wox.Infrastructure.Stopwatch.StopWatchNormal(Logger logger, String message, Action action, String methodName) in C:\projects\wox\Wox.Infrastructure\Stopwatch.cs:line 33
+   at System.Windows.Application.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+Exception end ------------------------------------------------------------
+
+## Runtime Info
+* Command Line: "C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Wox.exe" 
+* Portable Mode: True
+* Timestamp: 08/23/2022 19:17:32
+* Wox version: 1.4.1196
+* OS Version: Microsoft Windows NT 10.0.22000.0
+* x64 OS: True
+* x64 Process: True
+* System Language: en-US
+* Wox Language: en
+* CLR Version: 4.0.30319.42000
+* Installed .NET Framework: 
+   * v2.0.50727 2.0.50727.4927 SP2
+   * v3.0 3.0.30729.4926 SP2
+   * v3.5 3.5.30729.4926 SP1
+   * v4 Client 4.8.04161
+   * v4 Full 4.8.04161
+   * v4.0 Client 4.0.0.0
+
+## SDK Info
+* Python Path: C:\Program Files\Python310\pythonw.exe
+* Everything SDK Path: 
+
+## Assemblies - Wox.exe
+
+* Wox, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Wox.exe)
+* NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\NLog.dll)
+* Wox.Core, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Wox.Core.dll)
+* Sentry, Version=2.1.1.0, Culture=neutral, PublicKeyToken=fba2ec45388e2af0 (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Sentry.dll)
+* Sentry.Protocol, Version=2.1.1.0, Culture=neutral, PublicKeyToken=fba2ec45388e2af0 (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Sentry.Protocol.dll)
+* System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\System.Collections.Immutable.dll)
+* Wox.Infrastructure, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Wox.Infrastructure.dll)
+* Wox.Plugin, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Wox.Plugin.dll)
+* Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Newtonsoft.Json.dll)
+* Squirrel, Version=1.9.1.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Squirrel.dll)
+* Splat, Version=1.6.2.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Splat.dll)
+* Wox.Plugin.Shell, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.Shell\Wox.Plugin.Shell.dll)
+* Wox.Plugin.ControlPanel, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.ControlPanel\Wox.Plugin.ControlPanel.dll)
+* Wox.Plugin.Folder, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.Folder\Wox.Plugin.Folder.dll)
+* Wox.Plugin.Caculator, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.Caculator\Wox.Plugin.Caculator.dll)
+* Wox.Plugin.Everything, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.Everything\Wox.Plugin.Everything.dll)
+* Wox.Plugin.PluginManagement, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.PluginManagement\Wox.Plugin.PluginManagement.dll)
+* HelloWorldCSharp, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\HelloWorldCSharp\HelloWorldCSharp.dll)
+* Wox.Plugin.BrowserBookmark, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.BrowserBookmark\Wox.Plugin.browserBookmark.dll)
+* Wox.Plugin.Program, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.Program\Wox.Plugin.Program.dll)
+* Wox.Plugin.PluginIndicator, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.PluginIndicator\Wox.Plugin.PluginIndicator.dll)
+* Wox.Plugin.Color, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.Color\Wox.Plugin.Color.dll)
+* WindowsInput, Version=1.0.4.0, Culture=neutral, PublicKeyToken=9b287f7dc5073cad (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\WindowsInput.dll)
+* Wox.Plugin.Sys, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.Sys\Wox.Plugin.Sys.dll)
+* Wox.Plugin.WebSearch, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.WebSearch\Wox.Plugin.WebSearch.dll)
+* Wox.Plugin.Url, Version=1.4.1196.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.Url\Wox.Plugin.Url.dll)
+* Mages.Core, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.Caculator\Mages.Core.dll)
+* Microsoft.Data.Sqlite, Version=3.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.BrowserBookmark\Microsoft.Data.Sqlite.dll)
+* NHotkey, Version=1.2.1.0, Culture=neutral, PublicKeyToken=null (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\NHotkey.dll)
+* SQLitePCLRaw.batteries_v2, Version=2.0.2.669, Culture=neutral, PublicKeyToken=8226ea5df37bcae9 (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.BrowserBookmark\SQLitePCLRaw.batteries_v2.dll)
+* SQLitePCLRaw.core, Version=2.0.2.669, Culture=neutral, PublicKeyToken=1488e028ca7ab535 (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.BrowserBookmark\SQLitePCLRaw.core.dll)
+* SQLitePCLRaw.provider.dynamic_cdecl, Version=2.0.2.669, Culture=neutral, PublicKeyToken=b68184102cba0b3b (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.BrowserBookmark\SQLitePCLRaw.provider.dynamic_cdecl.dll)
+* System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.BrowserBookmark\System.Memory.dll)
+* SQLitePCLRaw.nativelibrary, Version=2.0.2.669, Culture=neutral, PublicKeyToken=502ed628492ab262 (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.BrowserBookmark\SQLitePCLRaw.nativelibrary.dll)
+* Sentry.PlatformAbstractions, Version=1.1.0.0, Culture=neutral, PublicKeyToken=fba2ec45388e2af0 (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Sentry.PlatformAbstractions.dll)
+* System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Users\Administrator\AppData\Local\Wox\app-1.4.1196\Plugins\Wox.Plugin.BrowserBookmark\System.Runtime.CompilerServices.Unsafe.dll)
+* mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll)
+* PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll)
+* WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll)
+* System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll)
+* System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll)
+* PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (C:\Windows\Microsoft.Net\assembly\GAC_64\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll)
+* System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll)
+* System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll)
+* System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll)
+* netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\netstandard\v4.0_2.0.0.0__cc7b13ffcd2ddd51\netstandard.dll)
+* System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Net.Http\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Net.Http.dll)
+* System.ValueTuple, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ValueTuple\v4.0_4.0.0.0__cc7b13ffcd2ddd51\System.ValueTuple.dll)
+* System.Runtime.Remoting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll)
+* System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll)
+* System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel\v4.0_4.0.0.0__b77a5c561934e089\System.ServiceModel.dll)
+* System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll)
+* System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll)
+* System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll)
+* System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll)
+* System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Caching\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.Caching.dll)
+* System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.InteropServices.RuntimeInformation\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.InteropServices.RuntimeInformation.dll)
+* System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Windows\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll)
+* System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.dll)
+* PresentationFramework.Aero2, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (C:\Windows\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework.Aero2\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.Aero2.dll)
